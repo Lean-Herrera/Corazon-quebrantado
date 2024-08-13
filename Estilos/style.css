@@ -47,10 +47,10 @@ p {
   color: white;
 }
 .header .bg-dark .container-fluid .titulos-principales .titulo h1 {
-  font-size: 1.7rem;
+  font-size: 100%;
 }
 .header .bg-dark .container-fluid .titulos-principales .titulo h2 {
-  font-size: 1.7rem;
+  font-size: 100%;
   color: rgb(131, 11, 11);
   font-weight: 800;
 }
