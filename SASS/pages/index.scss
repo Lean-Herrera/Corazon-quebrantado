@@ -1,0 +1,62 @@
+.main-index {
+    display: flex;
+    flex-direction: column;
+
+
+    section {
+        display: grid;
+        justify-self: center;
+        justify-content: center;
+        margin: 2rem;
+
+        h3 {
+            justify-self: center;
+
+        }
+
+        p{
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    .hospitales {
+
+
+
+        justify-self: center;
+        gap: 2rem;
+
+        h3 {
+            align-self: center;
+        }
+
+        .imagenes-hospitales {
+            // display: grid;
+            // grid-template-columns: repeat(3, 1fr);
+            // column-gap: 2rem;
+            display: flex;
+            overflow: auto;
+            gap: 2rem;
+
+
+            div {
+                justify-self: center;
+
+                h3 {
+                    justify-content: center;
+                    display: flex;
+
+                }
+
+                img {
+                    min-width: 80px;
+                    max-width: 250px;
+                }
+            }
+
+        }
+
+    }
+
+}
