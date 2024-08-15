@@ -12,7 +12,8 @@
             justify-content: space-between;
 
             img {
-                width: 80%;
+                min-width: 60px;
+                max-width: 80%;
                 border-radius: 100%;
                 justify-self: center;
             }
@@ -39,13 +40,14 @@
                     color: white;
 
                     h1 {
-                        font-size: 140%;
+                        
+                        font-size: 20px;
                         justify-self: end;
                     }
 
                     h2 {
                         justify-self: start;
-                        font-size: 150%;
+                        font-size: 20px;
                         color: rgb(131, 11, 11);
                         font-weight: 800;
                     }
@@ -53,11 +55,7 @@
 
 
 
-                h2 {
-                    justify-self: center;
-                    font-size: 100%;
-                    color: white;
-                }
+               
             }
 
             .navbar-toggler {
@@ -103,7 +101,12 @@
                    
                 }
 
-
+        .Dios-escucha {
+                    justify-self: center;
+                    font-size: 100%;
+                    color: white;
+                    grid-column: span 3;
+                }
         }
 
     }
