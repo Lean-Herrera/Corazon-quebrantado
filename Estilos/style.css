@@ -50,12 +50,12 @@ p {
   color: white;
 }
 .header .bg-dark .container-fluid .titulos-principales .titulo h1 {
-  font-size: 20px;
+  font-size: 5vw;
   justify-self: end;
 }
 .header .bg-dark .container-fluid .titulos-principales .titulo h2 {
   justify-self: start;
-  font-size: 20px;
+  font-size: 5vw;
   color: rgb(131, 11, 11);
   font-weight: 800;
 }
@@ -79,13 +79,72 @@ p {
   background-color: rgba(176, 50, 50, 0.52);
 }
 .header .bg-dark .container-fluid .navbar-collapse ul ul li {
-  outline: 1px solid rgb(0, 0, 0); /* Líneas rojas semitransparentes */
+  outline: 1px solid rgb(0, 0, 0);
+  /* Líneas rojas semitransparentes */
 }
 .header .bg-dark .container-fluid .Dios-escucha {
   justify-self: center;
   font-size: 100%;
   color: white;
   grid-column: span 3;
+}
+.header .bg-dark .container-fluid .barra-desktop {
+  display: none;
+}
+@media (min-width: 800px) {
+  .header .container-fluid {
+    grid-template-columns: max-content !important;
+  }
+  .header .container-fluid img {
+    max-width: 100px !important;
+  }
+  .header .container-fluid .titulos-principales .titulo {
+    display: flex !important;
+    max-width: 100% !important;
+  }
+  .header .container-fluid .titulos-principales .titulo h1 {
+    justify-self: start !important;
+    font-size: 5vw !important;
+  }
+  .header .container-fluid .titulos-principales .titulo h2 {
+    justify-self: start !important;
+    font-size: 5vw !important;
+  }
+  .header .container-fluid .navbar-toggler {
+    display: none !important;
+  }
+  .header .container-fluid .navbar-collapse {
+    display: none !important;
+  }
+  .header .container-fluid button {
+    display: none !important;
+  }
+  .header .container-fluid .Dios-escucha {
+    font-size: 2vw !important;
+  }
+  .header .container-fluid .barra-desktop {
+    display: flex !important;
+    grid-column: span 3;
+    justify-self: end;
+    justify-content: space-around;
+    color: rgb(131, 11, 11);
+    list-style: none;
+    width: 100%;
+    margin-block: 2rem;
+  }
+  .header .container-fluid .barra-desktop li {
+    /* Límite máximo */
+    font-size: 1.3vw;
+    transition: 400ms;
+    font-size: clamp(16px, 1.3vw, 36px);
+    cursor: none;
+  }
+  .header .container-fluid .barra-desktop li:hover {
+    transform: scale(1.3);
+    /* Color del texto */
+    text-shadow: 2px 2px 10px rgb(131, 11, 11), -2px -2px 10px rgb(131, 11, 11), 2px -2px 10px rgb(131, 11, 11), -2px 2px 10px rgb(131, 11, 11);
+    color: red;
+  }
 }
 
 .main-index {

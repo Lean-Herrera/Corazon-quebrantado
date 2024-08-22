@@ -25,7 +25,7 @@
                 display: grid;
                 justify-content: center;
                 // grid-template-rows: 2fr 1fr;
-                 padding-block: 1.5rem;
+                padding-block: 1.5rem;
                 font-family: Gruppo;
 
                 .titulo {
@@ -40,14 +40,14 @@
                     color: white;
 
                     h1 {
-                        
-                        font-size: 20px;
+
+                        font-size: 5vw;
                         justify-self: end;
                     }
 
                     h2 {
                         justify-self: start;
-                        font-size: 20px;
+                        font-size: 5vw;
                         color: rgb(131, 11, 11);
                         font-weight: 800;
                     }
@@ -55,7 +55,7 @@
 
 
 
-               
+
             }
 
             .navbar-toggler {
@@ -67,54 +67,148 @@
                 color: rgb(131, 11, 11);
                 border-color: red;
                 display: grid;
-               
 
 
-               
 
-                 span{
-                    
-                     justify-self: center;
-                 }
+
+
+                span {
+
+                    justify-self: center;
+                }
 
 
 
             }
 
-                .navbar-collapse {
-                    grid-column: span 3;
-                    padding-top: 1rem;
-                    
+            .navbar-collapse {
+                grid-column: span 3;
+                padding-top: 1rem;
 
-                     ul{
-                        //  width: fit-content;
 
-                        ul{
-                            background-color: rgba(176, 50, 50, 0.52);
+                ul {
+                    //  width: fit-content;
 
-                             li{
-                        outline: 1px solid rgb(0, 0, 0); /* Líneas rojas semitransparentes */ 
-                    }
+                    ul {
+                        background-color: rgba(176, 50, 50, 0.52);
+
+                        li {
+                            outline: 1px solid rgb(0, 0, 0);
+                            /* Líneas rojas semitransparentes */
                         }
-                     }
-
-                   
+                    }
                 }
 
-        .Dios-escucha {
-                    justify-self: center;
-                    font-size: 100%;
-                    color: white;
-                    grid-column: span 3;
-                }
+
+            }
+
+            .Dios-escucha {
+                justify-self: center;
+                font-size: 100%;
+                color: white;
+                grid-column: span 3;
+            }
+
+            .barra-desktop {
+                display: none;
+            }
         }
 
     }
 
 
 
+    @include mq-desktop {
 
+
+        .container-fluid {
+
+
+            grid-template-columns: max-content !important;
+
+            img {
+
+                max-width: 100px !important;
+            }
+
+            .titulos-principales {
+
+
+                .titulo {
+
+                    display: flex !important;
+                    max-width: 100% !important;
+
+                    h1 {
+                        justify-self: start !important;
+                        font-size: 5vw !important;
+                    }
+
+                    h2 {
+                        justify-self: start !important;
+                        font-size: 5vw !important;
+                    }
+                }
+
+
+            }
+
+            //A continuación deshabilito el menú hamburguesa
+
+            .navbar-toggler {
+                display: none !important;
+            }
+
+            .navbar-collapse {
+                display: none !important;
+            }
+
+            button {
+                display: none !important;
+            }
+
+            .Dios-escucha {
+                font-size: 2vw !important;
+            }
+
+            .barra-desktop {
+                display: flex !important;
+                grid-column: span 3;
+                justify-self: end;
+                justify-content: space-around;
+                color: rgb(131, 11, 11);
+                list-style: none;
+                width: 100%;
+                margin-block: 2rem;
+
+                li {
+                   
+                    
+                    /* Límite máximo */
+                    font-size: 1.3vw;
+                    transition: 400ms;
+                    font-size: clamp(16px, 1.3vw, 36px); //Con esto se le da un tamaño máximo al texto
+                    cursor: none;
+                }
+
+                li:hover {
+                    transform: scale(1.3);
+                    // text-shadow: 5px 5px 5px  rgb(140, 0, 0);
+                    /* Color del texto */
+                    text-shadow:
+                        2px 2px 10px rgb(131, 11, 11),
+                        -2px -2px 10px rgb(131, 11, 11),
+                        2px -2px 10px rgb(131, 11, 11),
+                        -2px 2px 10px rgb(131, 11, 11);
+                    color: red;
+                }
+
+
+            }
+        }
+
+
+
+    }
 
 }
-
-
