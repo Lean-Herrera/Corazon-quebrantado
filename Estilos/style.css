@@ -96,7 +96,7 @@ p {
     grid-template-columns: max-content !important;
   }
   .header .container-fluid img {
-    max-width: 100px !important;
+    max-width: 150px !important;
   }
   .header .container-fluid .titulos-principales .titulo {
     display: flex !important;
@@ -187,6 +187,53 @@ p {
 .main-index .hospitales .imagenes-hospitales div img {
   min-width: 80px;
   max-width: 250px;
+}
+@media (min-width: 800px) {
+  .main-index .hospitales .imagenes-hospitales {
+    width: 80vw;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 3rem;
+    justify-self: center;
+    overflow: unset;
+  }
+  .main-index .hospitales .imagenes-hospitales div {
+    width: 30vw;
+    padding: 1rem;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10px;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+  }
+  .main-index .hospitales .imagenes-hospitales h3 {
+    font-size: 20px;
+  }
+  .main-index .hospitales .imagenes-hospitales a {
+    justify-self: end;
+    width: 15vw;
+  }
+  .main-index .hospitales .imagenes-hospitales a img {
+    max-width: fit-content;
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+@media (min-width: 800px) {
+  .main-index {
+    display: grid;
+  }
+  .main-index section {
+    margin: 3rem;
+    max-width: 1111px;
+  }
+  .main-index section h3 {
+    font-size: 3rem;
+  }
+  .main-index section p {
+    font-size: 18px;
+  }
 }
 
 .footer {
