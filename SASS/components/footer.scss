@@ -117,4 +117,27 @@
         }
     }
 
+    @include mq-desktop{
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 3fr 1fr;
+         .fundaciones{
+            border-top: 0;
+            border-right: 1px aliceblue;
+        border-style: outset;
+         }
+         .iglesias{
+            width: 100%;
+            border-top: 0;
+            border-right: 1px aliceblue;
+        border-style: outset;
+         }
+         .redes{
+            
+            width: 100%;
+            border-top: 0;
+            border-right: 1px aliceblue;
+        border-style: outset;
+         }
+    }
+
 }

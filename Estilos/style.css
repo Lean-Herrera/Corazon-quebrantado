@@ -97,6 +97,7 @@ p {
   }
   .header .container-fluid img {
     max-width: 150px !important;
+    padding: 10px;
   }
   .header .container-fluid .titulos-principales .titulo {
     display: flex !important;
@@ -204,8 +205,14 @@ p {
     border-color: red;
     border-radius: 10px;
     border-width: 1px;
-    display: flex;
+    display: grid;
     align-items: center;
+    transition: 400ms;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-index .hospitales .imagenes-hospitales div :hover {
+    border: 2px 2px 2px 2px grey;
+    border-style: hidden;
   }
   .main-index .hospitales .imagenes-hospitales h3 {
     font-size: 20px;
@@ -324,6 +331,29 @@ p {
   border-radius: 10%;
   width: 60%;
   margin: 0;
+}
+@media (min-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+  }
+  .footer .fundaciones {
+    border-top: 0;
+    border-right: 1px aliceblue;
+    border-style: outset;
+  }
+  .footer .iglesias {
+    width: 100%;
+    border-top: 0;
+    border-right: 1px aliceblue;
+    border-style: outset;
+  }
+  .footer .redes {
+    width: 100%;
+    border-top: 0;
+    border-right: 1px aliceblue;
+    border-style: outset;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
